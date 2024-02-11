@@ -14,4 +14,17 @@ let studentScores = {
 
 // Start coding here
 
+// Merge scores from studentProfile and studentScores
+let mergedScores = {
+  ...studentProfile.scores,
+  ...studentScores,
+};
+console.log(mergedScores)
+
+// Update studentProfile with the merged scores
+let newStudentProfile = {
+  ...studentProfile,
+  scores: mergedScores,
+};
+
 console.log(newStudentProfile);
